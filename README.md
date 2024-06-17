@@ -21,17 +21,17 @@ For more details, refer to the [Kestra documentation](https://kestra.io/docs/ins
    - In the Developer Mode section, click Discord API, then click on Applications.
    - After navigating to [Discord API Applications](https://discord.com/developers/applications), click on "New Application", and name it after your favorite fictional character.
    - Under "Bot", enable all Privileged Gateway Intents and set the permissions to "Administrator".
-![Alt text](https://github.com/KaoutharBousbaa1/KestraProject/blob/main/screenshots/Screen3.png?raw=true)
-![Alt text](https://github.com/KaoutharBousbaa1/KestraProject/blob/main/screenshots/Sreen1.png?raw=true)
+![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Sreen1.png?raw=true)
+![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Screen3.png?raw=true)
    - Save changes and click on "Reset Token" to generate a new token. Copy and save it securely.
-![Alt text](https://github.com/KaoutharBousbaa1/KestraProject/blob/main/screenshots/Nouveau%20projet%20(2).png?raw=true)
+![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(2).png?raw=true)
 
 ## Step 4: Create a Discord Server
 1. Create a new Discord server by clicking the "+" button in the Discord app.
 
 ## Step 5: Set Up a Webhook
 1. In your Discord server, go to server settings, click "Integrations", then "New Webhook". Copy the webhook URL and save it.
-![Alt text](https://github.com/KaoutharBousbaa1/KestraProject/blob/main/screenshots/Nouveau%20projet%20(3).png?raw=true)
+![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(3).png?raw=true)
 
 ## Associate the Webhook to Your Bot
 
@@ -42,7 +42,7 @@ To authorize the Discord bot into your server, follow these steps to generate an
     - For the bot permissions, choose **“Administrator”**.
     - Scroll down and a generated URL will appear. Copy it and save it somewhere safe.
     - In **General Information**, copy this URL into **“LINKED ROLES VERIFICATION URL”**.
-  ![Alt text](https://github.com/KaoutharBousbaa1/KestraProject/blob/main/screenshots/Screen2.png?raw=true)
+
 2. **Authorize the Bot:**
     - Go to the **“General Information”** tab.
     - Copy the URL into **“LINKED ROLES VERIFICATION URL”**.
@@ -54,12 +54,13 @@ To authorize the Discord bot into your server, follow these steps to generate an
 ## Step 7: Set Up Google Cloud Services
 1. Go to the [BigQuery Console](https://console.cloud.google.com/bigquery) and a new dataset.
 2. Create tables within the dataset with the required schema here:
-    ![Alt text](https://github.com/KaoutharBousbaa1/KestraProject/blob/main/screenshots/Nouveau%20projet%20(11).png?raw=true)
-    ![Alt text](https://github.com/KaoutharBousbaa1/KestraProject/blob/main/screenshots/Nouveau%20projet%20(12).png?raw=true)
-    ![Alt text](https://github.com/KaoutharBousbaa1/KestraProject/blob/main/screenshots/Nouveau%20projet%20(13).png?raw=true)
-    ![Alt text](https://github.com/KaoutharBousbaa1/KestraProject/blob/main/screenshots/Nouveau%20projet%20(14).png?raw=true)
-    ![Alt text](https://github.com/KaoutharBousbaa1/KestraProject/blob/main/screenshots/Nouveau%20projet%20(15).png?raw=true)
-    ![Alt text](https://github.com/KaoutharBousbaa1/KestraProject/blob/main/screenshots/Nouveau%20projet%20(18)%20(1).png?raw=true)
+    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(3).png?raw=true)
+    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(12).png?raw=true)
+    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(13).png?raw=true)
+    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(14).png?raw=true)
+    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(15)%20-%20Copie.png?raw=true)
+    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(16)%20-%20Copie.png?raw=true)
+    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(17)%20-%20Copie.png?raw=true)
    
     Ensure that the tables and schemas match those specified in the YAML code. If you need to add additional tables, ensure that the data types are correct. For this project, you will need the macros, workout,       and steps tables. Refer to the YAML code in the BigQuery task to obtain the correct schema.
 4. Create a Google Cloud Storage (GCS) bucket:
