@@ -1,4 +1,4 @@
-# Kestra Project Setup and Discord Bot Integration
+# Kestra Project Setup
 
 ## Step 1: Install Docker-Compose
 1. Install Docker-Compose by following the instructions [here](https://docs.docker.com/compose/install/).
