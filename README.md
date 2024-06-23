@@ -180,10 +180,7 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
       env_file:
         - .env_encoded
     ```
-- Example `.env_encoded` file:
-    ```sh
-    SECRET_OPENAI_API_KEY=c2stbFJJVExvYU9jVThjTnJZb3N6YldUM0JsYmtGSjZCaURvSGNOZk1LbTJjUnZ6bFh2   SECRET_PRIVATE_KEY="LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tXG5NSUlFdlFJQkFEQU5CZ2txaGtpRzl3MEJBUUVGQUFTQ0JLY3dnZ1NqQWdFQUFvSUJBUUNLV0lhUVF4RjlBWVp5XG5XdHRMRnVrbzdVUlZLTlZXWWFZUVBqNlpZNGZpRVdsMi92"
-    ```
+Attached to this repo, you will find a template of .env_encoded file.
 
 For more information, refer to the [Kestra Documentation](https://kestra.io/docs/concepts/secret).
 
