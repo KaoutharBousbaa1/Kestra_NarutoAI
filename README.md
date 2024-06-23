@@ -73,7 +73,15 @@ Completing the Google Cloud Services setup will allow you to run the `Remind_me`
    - Click on "Service Accounts" from the left-hand menu.
    - Click on "Create Service Account".
    - Enter a name and description for the service account, then click "Create".
-   - Assign the necessary roles (listed below) and click "Continue".
+   - Assign the necessary roles:
+     - BigQuery Admin
+     - BigQuery Data Editor
+     - BigQuery Data Owner
+     - BigQuery Studio Admin
+     - BigQuery User
+     - Storage Object Admin
+     - Storage Object Creator
+   ![Service Account Roles](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(9).png?raw=true)
    - Click "Done".
 
 3. **Generate a Key for the Service Account:**
@@ -88,16 +96,7 @@ Completing the Google Cloud Services setup will allow you to run the `Remind_me`
     If you haven't already assign roles to your Service Account:
    - Go to the IAM & Admin Console and click on "IAM".
    - Find your service account in the list and click the pencil icon to edit it.
-   - Click "Add Another Role" and add the following roles:
-     - BigQuery Admin
-     - BigQuery Data Editor
-     - BigQuery Data Owner
-     - BigQuery Studio Admin
-     - BigQuery User
-     - Storage Object Admin
-     - Storage Object Creator
-
-   ![Service Account Roles](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(9).png?raw=true)
+   - Click "Add Another Role" and add the roles mentionned earlier.
 
 ## Step 8: Setting Up BigQuery and Google Cloud Storage
 1. Go to the [BigQuery Console](https://console.cloud.google.com/bigquery) and a new dataset.
