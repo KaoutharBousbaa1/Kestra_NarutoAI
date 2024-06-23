@@ -85,6 +85,7 @@ Completing the Google Cloud Services setup will allow you to run the `Remind_me`
    - Place this file in your Kestra Project directory where the Docker-compose file is located for better organization.
 
 4. **Assign Roles to the Service Account:**
+    If you haven't already assign roles to your Service Account:
    - Go to the IAM & Admin Console and click on "IAM".
    - Find your service account in the list and click the pencil icon to edit it.
    - Click "Add Another Role" and add the following roles:
