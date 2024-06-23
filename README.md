@@ -166,7 +166,18 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
 
 For more information, refer to the [Kestra Documentation](https://kestra.io/docs/concepts/secret).
 
-## Step 12: Run the Project
+## Step 12: Data and Schema Setup
+1. Upload the CSV tabes provided here to the daily_macros_demo, totasteps_demo, workout_strava_demo tables in BigQuery
+2. In the Discord directory, create an `.env` file with the following code:
+    ```sh
+    TOKEN=Paste_here_the_token_of_your_discord_bot_from_the_previous_steps
+    ```
+3. In `index.js`, replace `keyFilename` with your GCS service account key file path and the `projectID` variable with your GCS project ID. Also, replace the `bucketName` variable with the actual bucket name you created in the Google Cloud Storage project:
+    ```javascript
+    const bucketName = 'your_bucket_name_here';
+    ```
+    
+## Run the Project
 1. Navigate to your Kestra project directory containing the `docker-compose.yml` file and runStart Kestra using run Docker Compose:
     ```sh
     docker-compose up -d
@@ -178,16 +189,7 @@ For more information, refer to the [Kestra Documentation](https://kestra.io/docs
 3.  Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
 4.  Import the flows to Kestra.
    
-## Data and Schema Setup
-1. Upload the CSV tabes provided here to the daily_macros_demo, totasteps_demo, workout_strava_demo tables in BigQuery
-2. In the Discord directory, create an `.env` file with the following code:
-    ```sh
-    TOKEN=Paste_here_the_token_of_your_discord_bot_from_the_previous_steps
-    ```
-3. In `index.js`, replace `keyFilename` with your GCS service account key file path and the `projectID` variable with your GCS project ID. Also, replace the `bucketName` variable with the actual bucket name you created in the Google Cloud Storage project:
-    ```javascript
-    const bucketName = 'your_bucket_name_here';
-    ```
+
 
 ## Final Notes
 - Ensure that both the Docker Compose setup and the Discord bot are running.
