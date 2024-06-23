@@ -1,5 +1,8 @@
 # Kestra Project Setup
 
+This guide will help you set up Kestra along with a Discord bot and integrate various services. The setup is divided into three milestones for ease of understanding and execution.
+
+
 ## Step 1: Install Docker-Compose
 1. Install Docker-Compose by following the instructions [here](https://docs.docker.com/compose/install/).
 
@@ -15,6 +18,10 @@
 3. Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
 
 For more details, refer to the [Kestra documentation](https://kestra.io/docs/installation/docker-compose#download-the-docker-compose-file).
+
+## Milestone 1: Set Up Discord Bot
+
+Completing the Discord bot part of this milestone will allow you to run the `daily_meditation` flow. Once this part is complete, you can move directly to Step 11.
 
 ## Step 3: Create Your Discord Bot
    - Go to Discord settings, click on "Advanced".
@@ -50,6 +57,10 @@ To authorize the Discord bot into your server, follow these steps to generate an
     - Select the server you want to add the bot to from the dropdown menu.
     - Click **"Authorize"**.
     - Complete any CAPTCHA challenges if prompted.
+
+## Milestone 2: Set Up Google Cloud Services
+
+Completing the Google Cloud Services setup will allow you to run the `Remind_me`, `Remind_me_dependency`, `daily_report_nutrition`, `daily_report_workout`, `steps`, and `two_way_communication_two` flows. If this milestone is completed after the Discord milestone, you can move directly to Step 11.
 
 ## Step 7: Set Up Google Cloud Services
 1. Go to the [BigQuery Console](https://console.cloud.google.com/bigquery) and a new dataset.
@@ -90,6 +101,10 @@ To authorize the Discord bot into your server, follow these steps to generate an
 1. Enable the BigQuery API and Google Cloud Storage API in your Google Cloud project:
     - Go to the [API & Services Dashboard](https://console.cloud.google.com/apis/dashboard).
     - Search for "BigQuery API" and "Google Cloud Storage API" and enable them.
+
+## Milestone 3: Set Up Strava API
+
+Completing the Strava API setup will allow you to run the `Workout_data` flow.
 
 ## Step 10: Set Up Strava API
 1. Create a Strava account [here](https://www.strava.com/register/free?hl=fr-FR).
