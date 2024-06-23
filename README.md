@@ -62,7 +62,43 @@ To authorize the Discord bot into your server, follow these steps to generate an
 
 Completing the Google Cloud Services setup will allow you to run the `Remind_me`, `Remind_me_dependency`, `daily_report_nutrition`, `daily_report_workout`, `steps`, and `two_way_communication_two` flows. If this milestone is completed after the Discord milestone, you can move directly to Step 11.
 
-## Step 7: Set Up Google Cloud Services
+### Step 7: Create and Configure a Google Cloud Service Account
+1. **Create a Google Cloud Project:**
+   - If you haven't already, go to the [Google Cloud Console](https://console.cloud.google.com/).
+   - Click on the project drop-down menu at the top of the page.
+   - Click on "New Project" and fill in the necessary details. Click "Create".
+
+2. **Create a Service Account:**
+   - Go to the [IAM & Admin Console](https://console.cloud.google.com/iam-admin/iam).
+   - Click on "Service Accounts" from the left-hand menu.
+   - Click on "Create Service Account".
+   - Enter a name and description for the service account, then click "Create".
+   - Assign the necessary roles (listed below) and click "Continue".
+   - Click "Done".
+
+3. **Generate a Key for the Service Account:**
+   - After creating the service account, you will see it listed on the Service Accounts page.
+   - Click on the service account you just created.
+   - Click the "Keys" tab.
+   - Click "Add Key" and select "Create New Key".
+   - Choose "JSON" and click "Create". A JSON file will be downloaded to your computer. Keep this file secure as it contains the credentials for your service account.
+   - Place this file in your Kestra Project directory where the Docker-compose file is located for better organization.
+
+4. **Assign Roles to the Service Account:**
+   - Go to the IAM & Admin Console and click on "IAM".
+   - Find your service account in the list and click the pencil icon to edit it.
+   - Click "Add Another Role" and add the following roles:
+     - BigQuery Admin
+     - BigQuery Data Editor
+     - BigQuery Data Owner
+     - BigQuery Studio Admin
+     - BigQuery User
+     - Storage Object Admin
+     - Storage Object Creator
+
+   ![Service Account Roles](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(9).png?raw=true)
+
+## Step 8: Setting Up BigQuery and Google Cloud Storage
 1. Go to the [BigQuery Console](https://console.cloud.google.com/bigquery) and a new dataset.
 2. Create tables within the dataset with the required schema here:
     ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(11).png?raw=true)
@@ -76,27 +112,7 @@ Completing the Google Cloud Services setup will allow you to run the `Remind_me`
 4. Create a Google Cloud Storage (GCS) bucket:
    - Navigate to [Google Cloud Console](https://console.cloud.google.com/products/solutions/catalog/?hl=fr).
    - Go to "Resources" -> "Storage" and create a new bucket.
-
-## Step 8: Create and Configure a Service Account
-1. Go to the [IAM & Admin Console](https://console.cloud.google.com/iam-admin/iam).
-2. After creating the service account, you will see it listed on the Service Accounts page. To manage keys for this service account:
-
-    - On the right side of the service account display name, click `Actions`.
-    - Click `Manage Keys`.
-    - Click on `Create Key`.
-    - The Private Key will now be saved to your computer as a JSON file.
-    - Place this file in your Kestra Project directory where the Docker-compose file is located, for better organization.
-
-3. Add to the service account the following roles:
-    - BigQuery Admin
-    - BigQuery Data Editor
-    - BigQuery Data Owner
-    - BigQuery Studio Admin
-    - BigQuery User
-    - Storage Object Admin
-    - Storage Object Creator
-![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(9).png?raw=true)
-
+   
 ## Step 9: Enable Required APIs
 1. Enable the BigQuery API and Google Cloud Storage API in your Google Cloud project:
     - Go to the [API & Services Dashboard](https://console.cloud.google.com/apis/dashboard).
