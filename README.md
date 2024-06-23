@@ -184,7 +184,7 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
 For more information, refer to the [Kestra Documentation](https://kestra.io/docs/concepts/secret).
 
 ## Step 12: Data and Schema Setup
-1. Upload the CSV tabes provided here to the daily_macros_demo, totasteps_demo, workout_strava_demo tables in BigQuery
+1. Upload the CSV tabes provided here to the daily_macros_demo, totasteps_demo, workout_strava_demo tables in BigQuery. Before uploading, update the CSV files by adding rows where the date corresponds to the current date at the time you are running this code. This will ensure that you see the results.
 2. In the Discord directory, create an `.env` file with the following code:
     ```sh
     TOKEN=Paste_here_the_token_of_your_discord_bot_from_the_previous_steps
