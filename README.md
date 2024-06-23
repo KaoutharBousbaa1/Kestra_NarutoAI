@@ -167,6 +167,7 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
     CLIENT_SECRET_STRAVA=THE_ACTUAL_KEY_HERE
     REFRESH_TOKEN_STRAVA=THE_ACTUAL_KEY_HERE
     ```
+    Note that the actual values of PRIVATE_KEY, PROJECT_ID, PROJECT_KEY_ID, CLIENT_EMAIL, CLIENT_ID, and CLIENT_URL can be found in the JSON file of the service account you downloaded earlier in Step 7.
 2. Use the following bash script to encode the values:
     ```sh
     while IFS='=' read -r key value; do
