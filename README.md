@@ -96,7 +96,7 @@ Completing the Google Cloud Services setup will allow you to run the `Remind_me`
     If you haven't already assign roles to your Service Account:
    - Go to the IAM & Admin Console and click on "IAM".
    - Find your service account in the list and click the pencil icon to edit it.
-   - Click "Add Another Role" and add the roles mentionned earlier.
+   - Click "Add Another Role" and add the roles mentioned earlier.
 
 ## Step 8: Setting Up BigQuery and Google Cloud Storage
 1. Go to the [BigQuery Console](https://console.cloud.google.com/bigquery) and a new dataset.
@@ -166,7 +166,7 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
     CLIENT_SECRET_STRAVA=THE_ACTUAL_KEY_HERE
     REFRESH_TOKEN_STRAVA=THE_ACTUAL_KEY_HERE
     ```
-    Note that the actual values of PRIVATE_KEY, PROJECT_ID, PROJECT_KEY_ID, CLIENT_EMAIL, CLIENT_ID, and CLIENT_URL can be found in the JSON file of the service account you downloaded earlier in Step 7.
+    Note that the actual values of `PRIVATE_KEY`, `PROJECT_ID`, `PROJECT_KEY_ID`, `CLIENT_EMAIL`, `CLIENT_ID`, and `CLIENT_URL` can be found in the JSON file of the service account you downloaded earlier in Step 7.
 2. Use the following bash script to encode the values:
     ```sh
     while IFS='=' read -r key value; do
