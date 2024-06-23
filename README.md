@@ -153,11 +153,19 @@ Before proceeding, the Kestra flows interact with external sources such as OpenA
 
 In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY_NAME') }}`, while the actual keys are stored in the `.env` file and their encrypted versions in the `.env_encrypted` file.
 
-1. Create an `.env` file in your Kestra project directory with your keys:
+1. Create an `.env` file in your Kestra project directory with the following keys:
     ```sh
-    KEY_ONE=THE_ACTUAL_KEY_HERE
-    KEY_TWO=THE_ACTUAL_KEY_HERE
-    KEY_THREE=THE_ACTUAL_KEY_HERE
+    OPENAI_API_KEY=THE_ACTUAL_KEY_HERE
+    PRIVATE_KEY=THE_ACTUAL_KEY_HERE
+    PROJECT_ID=THE_ACTUAL_KEY_HERE
+    PROJECT_KEY_ID=THE_ACTUAL_KEY_HERE
+    CLIENT_EMAIL=THE_ACTUAL_KEY_HERE
+    CLIENT_ID=THE_ACTUAL_KEY_HERE
+    CLIENT_URL=THE_ACTUAL_KEY_HERE
+    DISCORD_WEBHOOK=THE_ACTUAL_KEY_HERE
+    CLIENT_ID_STRAVA=THE_ACTUAL_KEY_HERE
+    CLIENT_SECRET_STRAVA=THE_ACTUAL_KEY_HERE
+    REFRESH_TOKEN_STRAVA=THE_ACTUAL_KEY_HERE
     ```
 2. Use the following bash script to encode the values:
     ```sh
@@ -172,13 +180,9 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
       env_file:
         - .env_encoded
     ```
-- Example `.env` file:
-    ```sh
-    OPENAI_KEY=youropenaikey
-    ```
 - Example `.env_encoded` file:
     ```sh
-    SECRET_OPENAI_KEY=cGFzc3dvcmQHDXEZJHCHKmVJZEVCZECLZEKCLBZKCsnEBLCJLEZJCHCZGELJC
+    SECRET_OPENAI_API_KEY=c2stbFJJVExvYU9jVThjTnJZb3N6YldUM0JsYmtGSjZCaURvSGNOZk1LbTJjUnZ6bFh2   SECRET_PRIVATE_KEY="LS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tXG5NSUlFdlFJQkFEQU5CZ2txaGtpRzl3MEJBUUVGQUFTQ0JLY3dnZ1NqQWdFQUFvSUJBUUNLV0lhUVF4RjlBWVp5XG5XdHRMRnVrbzdVUlZLTlZXWWFZUVBqNlpZNGZpRVdsMi92"
     ```
 
 For more information, refer to the [Kestra Documentation](https://kestra.io/docs/concepts/secret).
