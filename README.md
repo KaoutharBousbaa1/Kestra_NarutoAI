@@ -167,7 +167,26 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
     CLIENT_SECRET_STRAVA=THE_ACTUAL_KEY_HERE
     REFRESH_TOKEN_STRAVA=THE_ACTUAL_KEY_HERE
     ```
-    Note that the actual values of `PRIVATE_KEY`, `PROJECT_ID`, `PROJECT_KEY_ID`, `CLIENT_EMAIL`, `CLIENT_ID`, and `CLIENT_URL` can be found in the JSON file of the service account you downloaded earlier in Step 7.
+    For Milestone 1, you only need to obtain the following:
+    - `OPENAI_API_KEY`
+    - `DISCORD_WEBHOOK`
+
+    For Milestone 2, in addition to the keys from Milestone 1, you will also need:
+    - `PRIVATE_KEY`
+    - `PROJECT_ID`
+    - `PROJECT_KEY_ID`
+    - `CLIENT_EMAIL`
+    - `CLIENT_ID`
+    - `CLIENT_URL`
+
+    These values can be found in the JSON file of the service account you downloaded earlier in Step 7.
+
+    For Milestone 3, in addition to the keys from Milestone 1, you will need:
+    - `CLIENT_ID_STRAVA`
+    - `CLIENT_SECRET_STRAVA`
+    - `REFRESH_TOKEN_STRAVA`
+    - `DISCORD_WEBHOOK`
+
 2. Use the following bash script to encode the values:
     ```sh
     while IFS='=' read -r key value; do
