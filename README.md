@@ -206,8 +206,6 @@ For more information, refer to the [Kestra Documentation](https://kestra.io/docs
     nodemon src/index.js
     ```
 3.  Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
-4.  Import the flows to Kestra.
-   
 
 
 ## Final Notes
