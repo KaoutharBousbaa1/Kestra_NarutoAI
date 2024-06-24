@@ -11,6 +11,7 @@ This guide will help you set up Kestra along with a Discord bot and integrate va
     ```sh
     curl -o docker-compose.yml https://raw.githubusercontent.com/kestra-io/kestra/develop/docker-compose.yml
     ```
+   Ensure that the `docker-compose.yml` file is located within the KestraProject folder to properly configure and run the Docker services for this project.
 2. Navigate to the folder where the `docker-compose.yml` file is located and launch Kestra using:
     ```sh
     docker-compose up -d
