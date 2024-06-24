@@ -16,6 +16,7 @@ This guide will help you set up Kestra along with a Discord bot and integrate va
     docker-compose up -d
     ```
 3. Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
+4. Import the flows to Kestra UI.
 
 For more details, refer to the [Kestra documentation](https://kestra.io/docs/installation/docker-compose#download-the-docker-compose-file).
 
