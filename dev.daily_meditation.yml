@@ -24,7 +24,7 @@ tasks:
 
   - id: send_discord_message
     type: io.kestra.plugin.notifications.discord.DiscordIncomingWebhook
-    url: https://discord.com/api/webhooks/1237492042393980938/7gRMQ0w1zoR8l_ObLQf8viv1OVJVx_1NIw3NgxCRAKZVIU0EVbqV8KS4jncn4t8e9wDZ
+    url: "{{ secret('DISCORD_WEBHOOK') }}"
     payload: |
       {
         "username": "NarutoAI",
