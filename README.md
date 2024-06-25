@@ -12,7 +12,7 @@ This guide will help you set up Kestra along with a Discord bot and integrate va
     curl -o docker-compose.yml https://raw.githubusercontent.com/kestra-io/kestra/develop/docker-compose.yml
     ```
    Ensure that the `docker-compose.yml` file is located within the KestraProject folder to properly configure and run the Docker services for this project.
-2. Navigate to the folder where the `docker-compose.yml` file is located and launch Kestra using:
+2. Open the Docker Desktop application and navigate to the folder where the `docker-compose.yml` file is located and launch Kestra using:
     ```sh
     docker-compose up -d
     ```
@@ -217,21 +217,22 @@ For more information, refer to the [Kestra Documentation](https://kestra.io/docs
     ```
     
 ## Run the Project
-1. Navigate to your Kestra project directory containing the `docker-compose.yml` file and runStart Kestra using run Docker Compose:
+1. Open Docker Desktpp application
+2. Navigate to your Kestra project directory containing the `docker-compose.yml` file and run Kestra using run Docker Compose:
     ```sh
     docker-compose up -d
     ```
 
-2. Unzip the folder called `node_modules` in your Discord Bot directory if it is not already unzipped. Then navigate to the unzipped folder and install the required packages by running the command:
+3. Unzip the folder called `node_modules` in your Discord Bot directory if it is not already unzipped. Then navigate to the unzipped folder and install the required packages by running the command:
     ```sh
     npm install
     ```
 
-3. Navigate to your Discord Bot directory and run the following command to start the bot:
+4. Navigate to your Discord Bot directory and run the following command to start the bot:
     ```sh
     nodemon src/index.js
     ```
-4.  Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
+5.  Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
 
 
 ## Final Notes
