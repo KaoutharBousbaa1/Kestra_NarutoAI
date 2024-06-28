@@ -154,7 +154,7 @@ Before proceeding, the Kestra flows interact with external sources such as OpenA
 
 In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY_NAME') }}`, while the actual keys are stored in the `.env` file and their encrypted versions in the `.env_encrypted` file.
 
-1. Create an `.env` file in your Kestra project directory with the following keys:
+1. Create an `.env` file in the DiscordBot folder (not inside the src folder) with the following keys:
     ```sh
     OPENAI_API_KEY=THE_ACTUAL_KEY_HERE
     PRIVATE_KEY=THE_ACTUAL_KEY_HERE
@@ -188,7 +188,7 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
     - `REFRESH_TOKEN_STRAVA`
     - `DISCORD_WEBHOOK`
 
-2. Use the following bash script to encode the values:
+2. To encode the values, navigate to the location of the .env file (within the DiscordBot folder) and run the following bash script in Git Bash:
     ```sh
     while IFS='=' read -r key value; do
         echo "SECRET_$key=$(echo -n "$value" | base64)";
