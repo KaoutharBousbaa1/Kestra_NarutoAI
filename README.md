@@ -222,17 +222,17 @@ For more information, refer to the [Kestra Documentation](https://kestra.io/docs
     ```sh
     docker-compose up -d
     ```
-
-3. Unzip the folder called `node_modules` in your Discord Bot directory if it is not already unzipped. Then navigate to the unzipped folder and install the required packages by running the command:
+3. Install Node.js, npm and nodemon
+4. Unzip the folder called `node_modules` in your Discord Bot directory if it is not already unzipped. Then navigate to the unzipped folder and install the required packages by running the command:
     ```sh
     npm install
     ```
 
-4. Navigate to your Discord Bot directory and run the following command to start the bot:
+5. Navigate to your Discord Bot directory and run the following command to start the bot:
     ```sh
     nodemon src/index.js
     ```
-5.  Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
+6.  Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
 
 
 ## Final Notes
