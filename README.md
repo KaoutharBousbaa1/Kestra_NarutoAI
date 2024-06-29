@@ -276,7 +276,7 @@ For more information, refer to the [Kestra Documentation](https://kestra.io/docs
     ```
     
 ## Run the Project
-1. Open Docker Desktpp application
+1. Open Docker Desktop application
 2. Navigate to your Kestra project directory containing the `docker-compose.yml` file and run Kestra using run Docker Compose:
     ```sh
     docker-compose up -d
