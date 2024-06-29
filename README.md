@@ -303,4 +303,4 @@ For more information, refer to the [Kestra Documentation](https://kestra.io/docs
 - Ensure that both the Docker Compose setup and the Discord bot are running.
 - Remember to configure the timezone in the Kestra UI to fit your local timezone.
 
-Follow these steps, and you'll have your Kestra project and Discord bot up and running smoothly. If you have any questions about the project, face any problems while following along, or have a suggestion for me, feel free to comment or drop me a DM on [X]([https://kestra.io/docs/installation/docker-compose#download-the-docker-compose-file](https://x.com/kaouthar_sc)).
+Follow these steps, and you'll have your Kestra project and Discord bot up and running smoothly. If you have any questions about the project, face any problems while following along, or have a suggestion for me, feel free to comment or drop me a DM on [X](https://x.com/kaouthar_sc).
