@@ -154,11 +154,11 @@ Replace `your-project-id` with your actual project ID.
 3. Create `daily_macros_demo`, `daily_workout_demo` and `totalsteps_demo` tables following these steps:
    
     - Navigate to your dataset (macros)
-      ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(1).png?raw=true)
+      ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/screenshot_6.png?raw=true)
     - Click on "Create table" > "Upload", and upload the daily_macros_demo.csv file attached to this repository
-      ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(19).png?raw=true)
+      ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/screenshot_7.png?raw=true)
     - Click on 'Auto detect"
-      ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet.png?raw=true)
+      ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshot_8.png?raw=true)
     - Repeat the same steps to create the two other table by navigating to the the 'workout_strava' dataset instead
 
 Below are example screenshots to guide you through the process of setting up your datasets and tables:
