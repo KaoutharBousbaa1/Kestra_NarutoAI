@@ -30,7 +30,7 @@ Completing the Discord bot part of this milestone will allow you to run the `dai
    - In the Developer Mode section, click Discord API, then click on Applications.
    - After navigating to [Discord API Applications](https://discord.com/developers/applications), click on "New Application", and name it after your favorite fictional character.
    - Under "Bot", enable all Privileged Gateway Intents and set the permissions to "Administrator".
-![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Sreen1.png?raw=true)
+![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/sreenshot_1.png?raw=true)
 ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Screen3.png?raw=true)
    - Save changes and click on "Reset Token" to generate a new token. Copy and save it securely.
 ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(2).png?raw=true)
