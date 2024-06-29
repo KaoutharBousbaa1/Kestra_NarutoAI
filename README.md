@@ -296,7 +296,8 @@ For more information, refer to the [Kestra Documentation](https://kestra.io/docs
     ```
 7.  Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
 8.  Import the flows to Kestra UI by clicking on 'Import'
-    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_16.png?raw=true)
+   
+    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_18.png?raw=true)
 
 ## Final Notes
 - Ensure that both the Docker Compose setup and the Discord bot are running.
