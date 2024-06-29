@@ -113,8 +113,7 @@ To create the necessary tables, you will need to execute the following SQL queri
 ```sql
 -- Create the 'events' dataset
 CREATE SCHEMA IF NOT EXISTS `your-project-id.events`;
-```
-```sql
+
 -- Create the 'reminders' table within the 'events' dataset
 CREATE TABLE IF NOT EXISTS `your-project-id.events.reminders` (
   Title STRING,
@@ -156,7 +155,7 @@ Below are example screenshots to guide you through the process of setting up you
     ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/screenshot.png?raw=true)
     ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(17)%20-%20Copie.png?raw=true)
    
-    Ensure that the tables and schemas match those specified in the YAML code. If you need to add additional tables, ensure that the data types are correct. For this project, you will need the macros, workout,       and steps tables. Refer to the YAML code in the BigQuery task to obtain the correct schema.
+Ensure that the tables and schemas match those specified in the YAML code. If you need to add additional tables, ensure that the data types are correct. For this project, you will need the macros, workout,       and steps tables. Refer to the YAML code in the BigQuery task to obtain the correct schema.
     
 4. Create a Google Cloud Storage (GCS) bucket:
    - Navigate to [Google Cloud Console](https://console.cloud.google.com/products/solutions/catalog/?hl=fr).
