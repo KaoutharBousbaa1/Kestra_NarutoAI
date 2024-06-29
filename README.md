@@ -133,6 +133,7 @@ CREATE TABLE IF NOT EXISTS `your-project-id.macros.daily_macros` (
   Carbohydrate FLOAT64
 );
 
+-- Create the 'daily_macros_demo' table within the 'macros' dataset
 CREATE TABLE IF NOT EXISTS `your-project-id.macros.daily_macros_demo` (
   Date DATE,
   Protein FLOAT64,
