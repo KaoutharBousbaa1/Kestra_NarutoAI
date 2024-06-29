@@ -30,17 +30,17 @@ Completing the Discord bot part of this milestone will allow you to run the `dai
    - In the Developer Mode section, click Discord API, then click on Applications.
    - After navigating to [Discord API Applications](https://discord.com/developers/applications), click on "New Application", and name it after your favorite fictional character.
    - Under "Bot", enable all Privileged Gateway Intents and set the permissions to "Administrator".
-![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/sreenshot_1.png?raw=true)
-![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/screenshot_2.png?raw=true)
+![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/sreenshot_1.png?raw=true)
+![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_2.png?raw=true)
    - Save changes and click on "Reset Token" to generate a new token. Copy and save it securely.
-![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/screenshot_3.png?raw=true)
+![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_3.png?raw=true)
 
 ## Step 4: Create a Discord Server
 1. Create a new Discord server by clicking the "+" button in the Discord app.
 
 ## Step 5: Set Up a Webhook
 1. In your Discord server, go to server settings, click "Integrations", then "New Webhook". Copy the webhook URL and save it.
-![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/screenshot_4.png?raw=true)
+![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_4.png?raw=true)
 
 ## Associate the Webhook to Your Bot
 
@@ -83,7 +83,7 @@ Completing the Google Cloud Services setup will allow you to run the `Remind_me`
      - BigQuery User
      - Storage Object Admin
      - Storage Object Creator
-   ![Service Account Roles](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/screenshot_5.png?raw=true)
+   ![Service Account Roles](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_5.png?raw=true)
    - Click "Done".
 
 3. **Generate a Key for the Service Account:**
@@ -154,18 +154,18 @@ Replace `your-project-id` with your actual project ID.
 3. Create `daily_macros_demo`, `daily_workout_demo` and `totalsteps_demo` tables following these steps:
    
     - Navigate to your dataset (macros)
-      ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/screenshot_6.png?raw=true)
+      ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_6.png?raw=true)
     - Click on "Create table" > "Upload", and upload the daily_macros_demo.csv file attached to this repository
-      ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/screenshot_7.png?raw=true)
+      ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_7.png?raw=true)
     - Click on 'Auto detect"
       ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshot_8.png?raw=true)
     - Repeat the same steps to create the two other table by navigating to the the 'workout_strava' dataset instead
 
 Below are example screenshots to guide you through the process of setting up your datasets and tables:
-    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(11).png?raw=true)
-    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(12).png?raw=true)
-    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(13).png?raw=true)
-    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(14).png?raw=true)
+    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_9.png?raw=true)
+    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_10.png?raw=true)
+    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_11.png?raw=true)
+    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_12.png?raw=true)
     ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/screenshot.png?raw=true)
     ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(17)%20-%20Copie.png?raw=true)
    
