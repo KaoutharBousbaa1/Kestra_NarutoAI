@@ -188,14 +188,14 @@ Completing the Strava API setup will allow you to run the `Workout_data` flow.
 1. Create a Strava account [here](https://www.strava.com/register/free?hl=fr-FR).
 2. Log in to Strava and create an API application with the Authorization Callback Domain set to `localhost`.
 3. Retrieve the Client ID and Client Secret from your Strava API application settings.
-![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(5).png?raw=true)
+![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_15.png?raw=true)
 5. Generate Access and Refresh tokens using Postman or a similar tool:
     - Replace `your_client_id` with your actual client ID in the following URL and paste it into your browser:
       ```sh
       https://www.strava.com/oauth/authorize?client_id=your_client_id&redirect_uri=http://localhost&response_type=code&scope=activity:read_all
       ```
     - You should see a page that looks like this, with your photo and website. Go ahead and hit authorize
-   ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(7).png?raw=true)
+   ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_16.png?raw=true)
    - After you do that, your browser will probably error. That’s ok. With this error, we actually get the information that we want from Strava. If you look at the navigation bar, the URL should now look like:
       ```sh
       http://localhost/?state=&code=somecode&scope=read,activity:read_all
@@ -208,7 +208,7 @@ Completing the Strava API setup will allow you to run the `Workout_data` flow.
       ```
     - Retrieve the Access and Refresh tokens from the JSON response.
       After you make the POST request, you will get a response which includes an Access and Refresh token in the JSON response.
-    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(8).png?raw=true)
+    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_17.png?raw=true)
 ## Step 11: Encrypt Your Keys
 Before proceeding, the Kestra flows interact with external sources such as OpenAI, Google Cloud Storage, BigQuery, Strava API, and Discord. Therefore, it is important to keep your keys secret for practical use.
 
