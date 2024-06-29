@@ -40,7 +40,7 @@ Completing the Discord bot part of this milestone will allow you to run the `dai
 
 ## Step 5: Set Up a Webhook
 1. In your Discord server, go to server settings, click "Integrations", then "New Webhook". Copy the webhook URL and save it.
-![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(3).png?raw=true)
+![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/screenshot_4.png?raw=true)
 
 ## Associate the Webhook to Your Bot
 
