@@ -156,7 +156,7 @@ Replace `your-project-id` with your actual project ID.
     - Navigate to your dataset (macros)
       ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(1).png?raw=true)
     - Click on "Create table" > "Upload", and upload the daily_macros_demo.csv file attached to this repository
-      ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(2).png?raw=true)
+      ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(19).png?raw=true)
     - Click on 'Auto detect"
       ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet.png?raw=true)
     - Repeat the same steps to create the two other table by navigating to the the 'workout_strava' dataset instead
