@@ -83,7 +83,7 @@ Completing the Google Cloud Services setup will allow you to run the `Remind_me`
      - BigQuery User
      - Storage Object Admin
      - Storage Object Creator
-   ![Service Account Roles](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(9).png?raw=true)
+   ![Service Account Roles](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/screenshot_5.png?raw=true)
    - Click "Done".
 
 3. **Generate a Key for the Service Account:**
