@@ -101,8 +101,54 @@ Completing the Google Cloud Services setup will allow you to run the `Remind_me`
    - Click "Add Another Role" and add the roles mentioned earlier.
 
 ## Step 8: Setting Up BigQuery and Google Cloud Storage
-1. Go to the [BigQuery Console](https://console.cloud.google.com/bigquery) and a new dataset.
-2. Create tables within the dataset with the required schema here:
+1. **Go to the [BigQuery Console](https://console.cloud.google.com/bigquery)**.
+2. Navigate to your GCS project
+To create the necessary tables, you will need to execute the following SQL queries in the BigQuery interface. Follow these steps:
+
+1. **Open the BigQuery Console** and select your project (e.g., `compelling-pact-326521`).
+2. **Click on the SQL workspace** (or click on "Compose New Query").
+3. **Copy and paste the following SQL queries** into the query editor and run them one by one:
+
+#### Create the 'events' dataset and the 'reminders' table
+```sql
+-- Create the 'events' dataset
+CREATE SCHEMA IF NOT EXISTS `your-project-id.events`;
+```
+```sql
+-- Create the 'reminders' table within the 'events' dataset
+CREATE TABLE IF NOT EXISTS `your-project-id.events.reminders` (
+  Title STRING,
+  Time TIME,
+  Date DATE
+);
+```
+```sql
+-- Create the 'macros' dataset
+CREATE SCHEMA IF NOT EXISTS `your-project-id.macros`;
+
+-- Create the 'daily_macros' table within the 'macros' dataset
+CREATE TABLE IF NOT EXISTS `your-project-id.macros.daily_macros` (
+  Date DATE,
+  Protein FLOAT64,
+  Fat FLOAT64,
+  Carbohydrate FLOAT64
+);
+```
+```sql
+-- Create the 'workout_strava' dataset
+CREATE SCHEMA IF NOT EXISTS `your-project-id.workout_strava`;
+
+-- Create the 'daily_workout' table within the 'workout_strava' dataset
+CREATE TABLE IF NOT EXISTS `your-project-id.workout_strava.daily_workout` (
+  `Sport Type` STRING,
+  `Start Date` DATE,
+  Distance FLOAT64,
+  `Average Speed` FLOAT64
+);
+```
+Replace `your-project-id` with your actual project ID.
+
+Below are example screenshots to guide you through the process of setting up your datasets and tables:
     ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(11).png?raw=true)
     ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(12).png?raw=true)
     ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(13).png?raw=true)
@@ -111,6 +157,7 @@ Completing the Google Cloud Services setup will allow you to run the `Remind_me`
     ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(17)%20-%20Copie.png?raw=true)
    
     Ensure that the tables and schemas match those specified in the YAML code. If you need to add additional tables, ensure that the data types are correct. For this project, you will need the macros, workout,       and steps tables. Refer to the YAML code in the BigQuery task to obtain the correct schema.
+    
 4. Create a Google Cloud Storage (GCS) bucket:
    - Navigate to [Google Cloud Console](https://console.cloud.google.com/products/solutions/catalog/?hl=fr).
    - Go to "Resources" -> "Storage" and create a new bucket.
