@@ -109,7 +109,7 @@ To create the necessary tables, you will need to execute the following SQL queri
 2. **Click on the SQL workspace** (or click on "Compose New Query").
 3. **Copy and paste the following SQL queries** into the query editor and run them one by one:
 
-#### Create the 'events' dataset and the 'reminders' table
+#### Create the 'reminders', 'daily_workout' and 'daily_macros' tables:
 ```sql
 -- Create the 'events' dataset
 CREATE SCHEMA IF NOT EXISTS `your-project-id.events`;
@@ -146,6 +146,20 @@ CREATE TABLE IF NOT EXISTS `your-project-id.workout_strava.daily_workout` (
 );
 ```
 Replace `your-project-id` with your actual project ID.
+
+#### Create the 'daily_macros_demo', 'daily_workout_demo' and 'totalsteps_demo' tables for the demo:
+
+1. Download the demo CSV files attached to this repositiry and update the CSV files by adding rows where the date corresponds to the current date at the time you are running this code. This will ensure that you see the results.
+   
+3. Create `daily_macros_demo`, `daily_workout_demo` and `totalsteps_demo` tables following these steps:
+   
+    - Navigate to your dataset (macros)
+      ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(1).png?raw=true)
+    - Click on "Create table" > "Upload", and upload the daily_macros_demo.csv file attached to this repository
+      ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(2).png?raw=true)
+    - Click on 'Auto detect"
+      ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet.png?raw=true)
+    - Repeat the same steps to create the two other table by navigating to the the 'workout_strava' dataset instead
 
 Below are example screenshots to guide you through the process of setting up your datasets and tables:
     ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(11).png?raw=true)
@@ -251,13 +265,12 @@ Attached to this repo, you will find a template of .env_encoded file.
 
 For more information, refer to the [Kestra Documentation](https://kestra.io/docs/concepts/secret).
 
-## Step 12: Data and Schema Setup
-1. Upload the CSV tabes provided here to the daily_macros_demo, totasteps_demo, workout_strava_demo tables in BigQuery. Before uploading, update the CSV files by adding rows where the date corresponds to the current date at the time you are running this code. This will ensure that you see the results.
-2. In the Discord directory, create an `.env` file with the following code:
+## Step 12: Schema Setup
+1. In the Discord directory, create an `.env` file with the following code:
     ```sh
     TOKEN=Paste_here_the_token_of_your_discord_bot_from_the_previous_steps
     ```
-3. In `index.js`, replace `keyFilename` with your GCS service account key file path and the `projectID` variable with your GCS project ID. Also, replace the `bucketName` variable with the actual bucket name you created in the Google Cloud Storage project:
+2. In `index.js`, replace `keyFilename` with your GCS service account key file path and the `projectID` variable with your GCS project ID. Also, replace the `bucketName` variable with the actual bucket name you created in the Google Cloud Storage project:
     ```javascript
     const bucketName = 'your_bucket_name_here';
     ```
