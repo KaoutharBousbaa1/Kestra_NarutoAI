@@ -33,7 +33,7 @@ Completing the Discord bot part of this milestone will allow you to run the `dai
 ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/sreenshot_1.png?raw=true)
 ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/screenshot_2.png?raw=true)
    - Save changes and click on "Reset Token" to generate a new token. Copy and save it securely.
-![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/Nouveau%20projet%20(2).png?raw=true)
+![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/sceenshots/screenshot_3.png?raw=true)
 
 ## Step 4: Create a Discord Server
 1. Create a new Discord server by clicking the "+" button in the Discord app.
