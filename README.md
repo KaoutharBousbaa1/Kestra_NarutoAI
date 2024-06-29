@@ -132,14 +132,6 @@ CREATE TABLE IF NOT EXISTS `your-project-id.macros.daily_macros` (
   Fat FLOAT64,
   Carbohydrate FLOAT64
 );
-
--- Create the 'daily_macros_demo' table within the 'macros' dataset
-CREATE TABLE IF NOT EXISTS `your-project-id.macros.daily_macros_demo` (
-  Date DATE,
-  Protein FLOAT64,
-  Fat FLOAT64,
-  Carbohydrate FLOAT64
-);
 ```
 ```sql
 -- Create the 'workout_strava' dataset
