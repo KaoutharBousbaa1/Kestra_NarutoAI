@@ -36,6 +36,7 @@ Completing the Discord bot part of this milestone will allow you to run the `dai
 
 ## Step 4: Create a Discord Server
 1. Create a new Discord server by clicking the "+" button in the Discord app.
+   
    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_19.png?raw=true)
    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_20.png?raw=true)
 
