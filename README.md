@@ -249,7 +249,7 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
     - `REFRESH_TOKEN_STRAVA`
     - `DISCORD_WEBHOOK`
 
-2. To encode the values, navigate to the location of the .env file (within the DiscordBot folder) and run the following bash script in Git Bash:
+2. To encode the values, navigate to the location of the .env file (within the KestraProject folder) and run the following bash script in Git Bash:
     ```sh
     while IFS='=' read -r key value; do
         echo "SECRET_$key=$(echo -n "$value" | base64)";
