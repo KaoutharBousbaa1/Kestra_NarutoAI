@@ -6,17 +6,12 @@ This guide will help you set up Kestra along with a Discord bot and integrate va
 ## Step 1: Install Docker-Compose
 1. Install Docker-Compose by following the instructions [here](https://docs.docker.com/compose/install/).
 
-## Step 2: Set Up Kestra
-1. Download the Docker Compose file using the following command:
+## Step 2: Set Up Docker-Compose
+ Download the Docker Compose file using the following command:
     ```sh
     curl -o docker-compose.yml https://raw.githubusercontent.com/kestra-io/kestra/develop/docker-compose.yml
     ```
    Ensure that the `docker-compose.yml` file is located within the KestraProject folder to properly configure and run the Docker services for this project.
-2. Open the Docker Desktop application and navigate to the folder where the `docker-compose.yml` file is located and launch Kestra using:
-    ```sh
-    docker-compose up -d
-    ```
-3. Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
 
 For more details, refer to the [Kestra documentation](https://kestra.io/docs/installation/docker-compose#download-the-docker-compose-file).
 
@@ -277,29 +272,30 @@ For more information, refer to the [Kestra Documentation](https://kestra.io/docs
     ```
     
 ## Run the Project
-1. Open Docker Desktop application
-2. Navigate to your Kestra project directory containing the `docker-compose.yml` file and run Kestra using run Docker Compose:
-    ```sh
-    docker-compose up -d
-    ```
-3. Install `Node.js`(which includes `npm`) and `nodemon`
+1. Install `Node.js`(which includes `npm`) and `nodemon`
    To verify that they have been installed correctly, run the following commands in your terminal or command prompt:
     ```bash
     node -v
     npm -v
-5. Unzip the folder called `node_modules` in your Discord Bot directory if it is not already unzipped. Then navigate to the unzipped folder and install the required packages by running the command:
+2. Unzip the folder called `node_modules` in your Discord Bot directory if it is not already unzipped. Then navigate to the unzipped folder and install the required packages by running the command:
     ```sh
     npm install
     ```
 
-6. Navigate to your Discord Bot directory and run the following command to start the bot:
+3. Navigate to your Discord Bot directory and run the following command to start the bot:
     ```sh
     nodemon src/index.js
     ```
-7.  Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
-8.  Import the flows to Kestra UI by clicking on 'Import'
+4.  Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
+5.  Import the flows to Kestra UI by clicking on 'Import'
    
     ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_18.png?raw=true)
+6. Open Docker Desktop application
+7. Navigate to the folder where the `docker-compose.yml` and run Kestra using run Docker Compose:
+    ```sh
+    docker-compose up -d
+    ```
+8. Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
 
 ## Final Notes
 - Ensure that both the Docker Compose setup and the Discord bot are running.
