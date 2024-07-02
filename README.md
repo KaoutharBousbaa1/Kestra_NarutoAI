@@ -215,7 +215,7 @@ Before proceeding, the Kestra flows interact with external sources such as OpenA
 
 In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY_NAME') }}`, while the actual keys are stored in the `.env` file and their encrypted versions in the `.env_encrypted` file.
 
-1. Create an `.env` file in the DiscordBot folder (not inside the src folder) with the following keys:
+1. Create an `.env` file in the KestraProject folder with the following keys:
     ```sh
     OPENAI_API_KEY=THE_ACTUAL_KEY_HERE
     PRIVATE_KEY=THE_ACTUAL_KEY_HERE
@@ -267,7 +267,7 @@ Attached to this repo, you will find a template of .env_encoded file.
 For more information, refer to the [Kestra Documentation](https://kestra.io/docs/concepts/secret).
 
 ## Step 12: Schema Setup
-1. In the Discord directory, create an `.env` file with the following code:
+1. In the Discord directory (not inside the src folder) , create an `.env` file with the following code:
     ```sh
     TOKEN=Paste_here_the_token_of_your_discord_bot_from_the_previous_steps
     ```
