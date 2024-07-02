@@ -293,7 +293,7 @@ For more information, refer to the [Kestra Documentation](https://kestra.io/docs
     nodemon src/index.js
     ```
 6. Open Docker Desktop application
-7. Navigate to the folder where the `docker-compose.yml` and run Kestra using run Docker Compose:
+7. Navigate to the folder where the `docker-compose.yml` and run the following command:
     ```sh
     docker-compose up -d
     ```
