@@ -288,16 +288,14 @@ For more information, refer to the [Kestra Documentation](https://kestra.io/docs
     ```sh
     nodemon src/index.js
     ```
-4.  Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
-5.  Import the flows to Kestra UI by clicking on 'Import'
-   
-    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_18.png?raw=true)
-6. Open Docker Desktop application
-7. Navigate to the folder where the `docker-compose.yml` and run Kestra using run Docker Compose:
+4. Open Docker Desktop application
+5. Navigate to the folder where the `docker-compose.yml` and run Kestra using run Docker Compose:
     ```sh
     docker-compose up -d
     ```
-8. Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
+6. Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
+7. Import the flows to Kestra UI by clicking on 'Import'
+   ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_18.png?raw=true)
 
 ## Final Notes
 - Ensure that both the Docker Compose setup and the Discord bot are running.
