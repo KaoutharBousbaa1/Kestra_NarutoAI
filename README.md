@@ -259,7 +259,7 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
       env_file:
         - .env_encoded
     ```
-Attached to this repo, you will find a template of .env_encoded file.
+Attached to this repo, you will find a template of .env_encoded and .env files.
 
 For more information, refer to the [Kestra Documentation](https://kestra.io/docs/concepts/secret).
 
