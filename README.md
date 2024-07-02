@@ -8,10 +8,10 @@ This guide will help you set up Kestra along with a Discord bot and integrate va
 
 ## Step 2: Set Up Docker-Compose
  Download the Docker Compose file using the following command:
- 
-    ```sh
+
+  ```sh
     curl -o docker-compose.yml https://raw.githubusercontent.com/kestra-io/kestra/develop/docker-compose.yml
-    ```
+  ```
     
    Ensure that the `docker-compose.yml` file is located within the KestraProject folder to properly configure and run the Docker services for this project.
 
