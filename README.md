@@ -210,7 +210,7 @@ Completing the Strava API setup will allow you to run the `Workout_data` flow.
 ## Step 11: Encrypt Your Keys
 Before proceeding, the Kestra flows interact with external sources such as OpenAI, Google Cloud Storage, BigQuery, Strava API, and Discord. Therefore, it is important to keep your keys secret for practical use.
 
-In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY_NAME') }}`, while the actual keys are stored in the `.env` file and their encrypted versions in the `.env_encrypted` file.
+In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY_NAME') }}`, while the actual keys are stored in the `.env` file and their encrypted versions in the `.env_encoded` file.
 
 1. Create an `.env` file in the KestraProject folder with the following keys:
     ```sh
