@@ -248,10 +248,13 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
 
 2. To encode the values, run the following command prompt for each key in the Git Bash:
     ```sh
-    echo -n "YOUR_KEY_IS_HERE" | base64
+    echo -n "THE_ACTUAL_KEY_HERE" | base64
     ```
 3. Navigate to the location of the .env file (within the KestraProject folder) and create a new file .env_encoded and paste the encoded value from the previous step.
-4. Update your `docker-compose.yml` file to use the encoded keys:
+    ```sh
+    SECRET_YOUR_KEY_NAME=RESULT_FROM_ABOVE_PASTED
+    ```
+5. Update your `docker-compose.yml` file to use the encoded keys:
     ```yaml
     kestra:
       image: kestra/kestra:latest-full
@@ -259,7 +262,7 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
         - .env_encoded
     ```
 Attached to this repo, you will find a template of .env_encoded and .env files.
-
+    
 For more information, refer to the [Kestra Documentation](https://kestra.io/docs/concepts/secret).
 
 ## Step 12: Schema Setup
