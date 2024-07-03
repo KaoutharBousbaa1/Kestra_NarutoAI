@@ -276,31 +276,34 @@ For more information, refer to the [Kestra Documentation](https://kestra.io/docs
     ```
     
 ## Run the Project
-1. Install `Node.js`(which includes `npm`)
-2. Install `nodemon` using the command:
-   ```sh
-    npm install -g nodemon
-    ```
-3. Verify that they have been installed correctly, run the following commands in your terminal or command prompt:
+1. Install `Node.js`(which includes `npm`):
+   - Open your web browser and go to the [Node.js download page](https://nodejs.org/en).
+   - Download the LTS (Long Term Support) version for most stability.
+   - Once the installer is downloaded, open it to start the installation process.
+2. Verify that they have been installed correctly, run the following commands in your terminal or command prompt:
     ```bash
     node -v
     npm -v
-4. Unzip the folder called `node_modules` in your Discord Bot directory if it is not already unzipped. Then navigate to the unzipped folder and install the required packages by running the command:
+3. Install `nodemon` using the command:
+   ```sh
+    npm install -g nodemon
+    ```
+5. Unzip the folder called `node_modules` in your Discord Bot directory if it is not already unzipped. Then navigate to the unzipped folder and install the required packages by running the command:
     ```sh
     npm install
     ```
 
-5. Navigate to your Discord Bot directory and run the following command to start the bot:
+6. Navigate to your Discord Bot directory and run the following command to start the bot:
     ```sh
     nodemon src/index.js
     ```
-6. Open Docker Desktop application
-7. Navigate to the folder where the `docker-compose.yml` and run the following command:
+7. Open Docker Desktop application
+8. Navigate to the folder where the `docker-compose.yml` and run the following command:
     ```sh
     docker-compose up -d
     ```
-8. Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
-9. Import the flows to Kestra UI by clicking on 'Import'
+9. Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
+10. Import the flows to Kestra UI by clicking on 'Import'
    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_18.png?raw=true)
 
 ## Final Notes
