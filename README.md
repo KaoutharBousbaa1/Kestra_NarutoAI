@@ -288,22 +288,26 @@ For more information, refer to the [Kestra Documentation](https://kestra.io/docs
    ```sh
     npm install -g nodemon
     ```
-5. Unzip the folder called `node_modules` in your Discord Bot directory if it is not already unzipped. Then navigate to the unzipped folder and install the required packages by running the command:
+4. Navigate to your Discord Bot directory and run the following command to unzip the node_modules folder:
+   ```sh
+      tar -xf node_modules.zip
+    ```
+6. Then navigate to the node_modules folder and install the required packages by running the command:
     ```sh
     npm install
     ```
 
-6. Navigate to your Discord Bot directory and run the following command to start the bot:
+7. Navigate to your Discord Bot directory and run the following command to start the bot:
     ```sh
     nodemon src/index.js
     ```
-7. Open Docker Desktop application
-8. Navigate to the folder where the `docker-compose.yml` and run the following command:
+8. Open Docker Desktop application
+9. Navigate to the folder where the `docker-compose.yml` and run the following command:
     ```sh
     docker-compose up -d
     ```
-9. Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
-10. Import the flows to Kestra UI by clicking on 'Import'
+10. Open [http://localhost:8080](http://localhost:8080) in your browser to access the Kestra UI.
+11. Import the flows to Kestra UI by clicking on 'Import'
    ![Alt text](https://github.com/KaoutharBousbaa1/Kestra_NarutoAI/blob/main/screenshots/screenshot_18.png?raw=true)
 
 ## Final Notes
