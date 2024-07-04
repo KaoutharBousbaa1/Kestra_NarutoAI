@@ -270,10 +270,11 @@ For more information, refer to the [Kestra Documentation](https://kestra.io/docs
     ```sh
     TOKEN=Paste_here_the_token_of_your_discord_bot_from_the_previous_steps
     ```
-2. In `index.js`, replace `keyFilename` with your GCS service account key file path and the `projectID` variable with your GCS project ID. Also, replace the `bucketName` variable with the actual bucket name you created in the Google Cloud Storage project:
+2. In `index.js`, replace `keyFilename` and `keyFile` with your GCS service account key file path and the `projectID` variable with your GCS project ID. Also, replace the `bucketName` variable with the actual bucket name you created in the Google Cloud Storage project:
     ```javascript
     const bucketName = 'your_bucket_name_here';
     ```
+3. 
     
 ## Run the Project
 1. Install `Node.js`(which includes `npm`):
