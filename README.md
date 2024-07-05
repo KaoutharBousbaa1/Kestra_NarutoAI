@@ -103,7 +103,7 @@ Completing the Google Cloud Services setup will allow you to run the `Remind_me`
 2. Navigate to your GCS project
 To create the necessary tables, you will need to execute the following SQL queries in the BigQuery interface. Follow these steps:
 
-1. **Open the BigQuery Console** and select your project (e.g., `compelling-pact-326521`).
+1. **Open the BigQuery Console** and select your project.
 2. **Click on the SQL workspace** (or click on "Compose New Query").
 3. **Copy and paste the following SQL queries** into the query editor and run them one by one:
 
