@@ -9,7 +9,7 @@ tasks:
         type: io.kestra.plugin.scripts.python.Script
         beforeCommands:
           - pip install pandas > /dev/null
-          - pip install --upgrade pip
+          - pip install pandas --upgrade pip
         warningOnStdErr: false
         script: |
           import requests
