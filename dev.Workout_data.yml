@@ -8,8 +8,8 @@ tasks:
       - id: API_request
         type: io.kestra.plugin.scripts.python.Script
         beforeCommands:
-          - pip install pandas > /dev/null
-          - pip install pandas --upgrade pip
+            - pip install --upgrade pip
+            - pip install pandas > /dev/null
         warningOnStdErr: false
         script: |
           import requests
