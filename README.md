@@ -216,8 +216,7 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
     ```sh
     OPENAI_API_KEY=THE_ACTUAL_KEY_HERE
     PRIVATE_KEY=THE_ACTUAL_KEY_HERE
-    PROJECT_ID=THE_ACTUAL_KEY_HERE
-    PROJECT_KEY_ID=THE_ACTUAL_KEY_HERE
+    PRIVATE_KEY_ID=THE_ACTUAL_KEY_HERE
     CLIENT_EMAIL=THE_ACTUAL_KEY_HERE
     CLIENT_ID=THE_ACTUAL_KEY_HERE
     CLIENT_CERT_URL=THE_ACTUAL_KEY_HERE
@@ -232,8 +231,7 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
 
     For Milestone 2, in addition to the keys from Milestone 1, you will also need:
     - `PRIVATE_KEY`
-    - `PROJECT_ID`
-    - `PROJECT_KEY_ID`
+    - `PRIVATE_KEY_ID`
     - `CLIENT_EMAIL`
     - `CLIENT_ID`
     - `CLIENT_URL`
