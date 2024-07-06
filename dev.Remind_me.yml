@@ -9,6 +9,7 @@ tasks:
         type: io.kestra.plugin.scripts.python.Script
         beforeCommands:
             - pip install pandas > /dev/null
+            - pip install --upgrade pip
         warningOnStdErr: false
         outputFiles:
           - "*.csv"
