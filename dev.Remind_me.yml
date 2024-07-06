@@ -8,8 +8,8 @@ tasks:
       - id: pandas
         type: io.kestra.plugin.scripts.python.Script
         beforeCommands:
+            - pip install --upgrade pip
             - pip install pandas > /dev/null
-            - pip install pandas --upgrade pip
         warningOnStdErr: false
         outputFiles:
           - "*.csv"
