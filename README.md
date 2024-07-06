@@ -215,11 +215,6 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
 1. Create an `.env` file in the KestraProject folder with the following keys:
     ```sh
     OPENAI_API_KEY=THE_ACTUAL_KEY_HERE
-    PRIVATE_KEY=THE_ACTUAL_KEY_HERE
-    PRIVATE_KEY_ID=THE_ACTUAL_KEY_HERE
-    CLIENT_EMAIL=THE_ACTUAL_KEY_HERE
-    CLIENT_ID=THE_ACTUAL_KEY_HERE
-    CLIENT_CERT_URL=THE_ACTUAL_KEY_HERE
     DISCORD_WEBHOOK=THE_ACTUAL_KEY_HERE
     CLIENT_ID_STRAVA=THE_ACTUAL_KEY_HERE
     CLIENT_SECRET_STRAVA=THE_ACTUAL_KEY_HERE
@@ -228,15 +223,6 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
     For Milestone 1, you only need to obtain the following:
     - `OPENAI_API_KEY`
     - `DISCORD_WEBHOOK`
-
-    For Milestone 2, in addition to the keys from Milestone 1, you will also need:
-    - `PRIVATE_KEY`
-    - `PRIVATE_KEY_ID`
-    - `CLIENT_EMAIL`
-    - `CLIENT_ID`
-    - `CLIENT_CERT_URL`
-
-    These values can be found in the JSON file of the service account you downloaded earlier in Step 7.
 
     For Milestone 3, in addition to the keys from Milestone 1, you will need:
     - `CLIENT_ID_STRAVA`
@@ -258,6 +244,16 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
       image: kestra/kestra:latest-full
       env_file:
         - .env_encoded
+    ```
+6. For Milestone 2, you will need to encode the service account JSON file, to do encode it to base64, use the following command in Git Bash, where sa.json is your service account JSON file:
+    ```sh
+    cat sa.json | base64
+    ```
+7. Then, copy and paste the response as a new environment variable, that starts with `SECRET_`, in your `docker-compose.yml` file:
+   ```yaml
+    kestra:
+     environment:
+       SECRET_SERVICE_ACCOUNT: "base64_encoded_json"
     ```
 Attached to this repo, you will find a template of .env_encoded and .env files.
     
