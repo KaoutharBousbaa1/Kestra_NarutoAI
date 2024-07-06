@@ -39,20 +39,7 @@ triggers:
   - id: watch
     type: io.kestra.plugin.gcp.bigquery.Trigger
     interval: "PT02M"  # Adjust the interval to run every 1 minute (for testing, adjust for production)
-    serviceAccount: |
-              {
-                "type": "service_account",
-                "project_id": "compelling-pact-326521",
-                "private_key_id": "{{ secret('PRIVATE_KEY_ID') }}",
-                "private_key": "{{ secret('PRIVATE_KEY') }}",
-                "client_email": "{{ secret('CLIENT_EMAIL') }}",
-                "client_id": "{{ secret('CLIENT_ID') }}",
-                "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-                "token_uri": "https://oauth2.googleapis.com/token",
-                "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-                "client_x509_cert_url": "{{ secret('CLIENT_CERT_URL') }}",
-                "universe_domain": "googleapis.com"
-              }
+    serviceAccount: "{{ secret('SERVICE_ACCOUNT') }}"
     projectId: "compelling-pact-326521"
     sql: "SELECT `Date`, `Total Steps` FROM workout_strava.totalsteps_demo WHERE `Date` = CURRENT_DATE();"
     fetch: true
