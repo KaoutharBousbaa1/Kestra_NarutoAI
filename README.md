@@ -234,7 +234,7 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
     - `PRIVATE_KEY_ID`
     - `CLIENT_EMAIL`
     - `CLIENT_ID`
-    - `CLIENT_URL`
+    - `CLIENT_CERT_URL`
 
     These values can be found in the JSON file of the service account you downloaded earlier in Step 7.
 
