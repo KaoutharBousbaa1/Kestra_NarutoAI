@@ -59,7 +59,7 @@ tasks:
 triggers:
   - id: watch
     type: io.kestra.plugin.gcp.bigquery.Trigger
-    interval: "PT02M"  # Adjust the interval to run every 24 hours
+    interval: "PT02M"  # Adjust the interval to run every 24 hours, (for testing, adjust  the interval to run every 2 min)
     serviceAccount: "{{ secret('SERVICE_ACCOUNT') }}"
     projectId: "compelling-pact-326521"
     sql: "SELECT * FROM workout_strava.workout_strava_demo WHERE `Start Date` = CURRENT_DATE();"
