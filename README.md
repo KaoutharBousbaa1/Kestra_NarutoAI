@@ -247,7 +247,7 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
     ```
 6. For Milestone 2, you will need to encode the service account JSON file, to do encode it to base64, use the following command in Git Bash, where sa.json is your service account JSON file:
     ```sh
-    echo "SECRET_SERVICE_ACCOUNT=$(base64 --input=sa.json)" >> .env_encoded
+    echo "SECRET_SERVICE_ACCOUNT=$(base64 < sa.json)" >> .env_encoded
     ```
 Attached to this repo, you will find a template of .env_encoded and .env files.
     
