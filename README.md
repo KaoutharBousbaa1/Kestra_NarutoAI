@@ -268,7 +268,6 @@ For more information, refer to the [Kestra Documentation](https://kestra.io/docs
     ```javascript
     const bucketName = 'your_bucket_name_here';
     ```
-3. 
     
 ## Run the Project
 1. Install `Node.js`(which includes `npm`):
