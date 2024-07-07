@@ -36,7 +36,7 @@ client.on('messageCreate', async (message) => {
         }
 
         if (message.content.startsWith('Hello')) {
-            message.reply('Hey, Tina!');
+            message.reply('Hey!');
         }
 
         try {
