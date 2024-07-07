@@ -247,13 +247,7 @@ In our case, in the YAML code, the keys are referenced as `{{ secret('SECRET_KEY
     ```
 6. For Milestone 2, you will need to encode the service account JSON file, to do encode it to base64, use the following command in Git Bash, where sa.json is your service account JSON file:
     ```sh
-    cat sa.json | base64
-    ```
-7. Then, copy and paste the response as a new environment variable, that starts with `SECRET_`, in your `docker-compose.yml` file:
-   ```yaml
-    kestra:
-     environment:
-       SECRET_SERVICE_ACCOUNT: "base64_encoded_json"
+    echo "SECRET_GCP_SA=$(base64 --input=sa.json)" >> .env_encoded
     ```
 Attached to this repo, you will find a template of .env_encoded and .env files.
     
