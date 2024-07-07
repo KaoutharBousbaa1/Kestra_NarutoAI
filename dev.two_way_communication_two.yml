@@ -100,7 +100,7 @@ tasks:
       type: io.kestra.plugin.notifications.discord.DiscordExecution
       url: "{{ secret('DISCORD_WEBHOOK') }}"
       username: "AnimeAI"
-      content: "Your meal is a dish of shrimp cooked in garlic and olive oil, served in a small pot. The estimated macros are: {{ outputs.parse_text.result.content }}"
+      content: "The estimated macros are: {{ outputs.parse_text.result.content }}"
 
     - id: load_csv_tobigquery
       type: "io.kestra.plugin.gcp.bigquery.Load"
