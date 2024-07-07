@@ -22,7 +22,7 @@ tasks:
               url = "https://api.openai.com/v1/chat/completions"
 
               # Set your OpenAI API key
-              api_key = "{{ secret('OPEN_AI_KEY') }}"
+              api_key = "{{ secret('OPENAI_API_KEY') }}"
 
               # Read the image file as binary data
               with open("{{ outputs.download_file.uri }}", "rb") as f:
