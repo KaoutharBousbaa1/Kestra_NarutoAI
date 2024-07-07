@@ -8,6 +8,7 @@ tasks:
       - id: save_data
         type: io.kestra.plugin.scripts.python.Script
         beforeCommands:
+          - pip install --upgrade pip
           - pip install pandas > /dev/null
           - pip install pandas matplotlib > /dev/null
         warningOnStdErr: false
